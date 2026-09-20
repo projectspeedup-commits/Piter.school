@@ -150,6 +150,21 @@ body {
 .back:hover { border-color: var(--accent); }
 .crumb { color: var(--text-soft); }
 
+.print-btn {
+  margin-left: auto;
+  display: inline-block;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.print-btn:hover { border-color: var(--accent); }
+
 .task-page { padding-top: 8px; }
 
 .markdown {
@@ -263,4 +278,25 @@ body {
   .markdown h1 { font-size: 1.4rem; }
   .cards { grid-template-columns: 1fr; }
   .card img { height: 120px; }
+}
+
+/* ===== Печать ===== */
+@media print {
+  body { background: #fff; font-size: 12pt; }
+  .topnav, .footer, .search-wrap, .hero, .answers-toggle { display: none !important; }
+  .container { max-width: none; padding: 0; }
+  .markdown { border: none; box-shadow: none; padding: 0; }
+  .markdown pre {
+    background: #f5f5f5;
+    color: #000;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+  }
+  .markdown blockquote { background: #f5f5f5; }
+  .hw-section, .answers-box { border: 1.5px solid #999; background: #fff; }
+  /* Ответы печатаются, только если их специально открыли */
+  .answers-box:not(.open) { display: none !important; }
+  .markdown img { max-width: 100%; page-break-inside: avoid; }
+  h2, h3 { page-break-after: avoid; }
+  .hw-section { page-break-before: auto; }
 }

@@ -49,7 +49,19 @@
     if (h1) document.title = h1.textContent + " — Piter.school";
 
     wrapSections();
+    fixImagePaths();
     renderMath();
+  }
+
+  /* Картинки из .md лежат рядом с файлом в content/ — чиним относительные пути */
+  function fixImagePaths() {
+    var dir = path.substring(0, path.lastIndexOf("/") + 1);
+    Array.prototype.forEach.call(article.querySelectorAll("img"), function (img) {
+      var src = img.getAttribute("src");
+      if (src && !/^(https?:)?\/\//.test(src) && src.charAt(0) !== "/" && src.indexOf("data:") !== 0) {
+        img.src = base + dir + src;
+      }
+    });
   }
 
   /* Оборачиваем разделы h2: «Самостоятельная работа» — в зелёный блок,
