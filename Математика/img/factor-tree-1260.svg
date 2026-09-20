@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 588" font-family="'Segoe UI', Arial, sans-serif">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/></marker></defs>
+<rect x="0" y="0" width="820" height="588" rx="18" fill="#f8faff"/>
+<g stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arr)">
+<line x1="360" y1="66" x2="190" y2="88"/>
+<line x1="380" y1="66" x2="430" y2="104"/>
+<line x1="430" y1="144" x2="260" y2="166"/>
+<line x1="450" y1="144" x2="500" y2="182"/>
+<line x1="500" y1="222" x2="330" y2="244"/>
+<line x1="520" y1="222" x2="570" y2="260"/>
+<line x1="570" y1="300" x2="400" y2="322"/>
+<line x1="590" y1="300" x2="640" y2="338"/>
+<line x1="640" y1="378" x2="470" y2="400"/>
+<line x1="660" y1="378" x2="710" y2="416"/>
+</g>
+<g font-size="26" font-weight="700" text-anchor="middle">
+<rect x="300" y="30" width="120" height="40" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="360" y="59" fill="#3730a3">1260</text>
+<rect x="370" y="108" width="120" height="40" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="430" y="137" fill="#3730a3">630</text>
+<rect x="440" y="186" width="120" height="40" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="500" y="215" fill="#3730a3">315</text>
+<rect x="510" y="264" width="120" height="40" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="570" y="293" fill="#3730a3">105</text>
+<rect x="580" y="342" width="120" height="40" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/><text x="640" y="371" fill="#3730a3">35</text>
+</g>
+<g font-size="26" font-weight="700" text-anchor="middle">
+<circle cx="190" cy="108" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="190" y="117" fill="#15803d">2</text>
+<circle cx="260" cy="186" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="260" y="195" fill="#15803d">2</text>
+<circle cx="330" cy="264" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="330" y="273" fill="#15803d">3</text>
+<circle cx="400" cy="342" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="400" y="351" fill="#15803d">3</text>
+<circle cx="470" cy="420" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="470" y="429" fill="#15803d">5</text>
+<circle cx="710" cy="440" r="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/><text x="710" y="449" fill="#15803d">7</text>
+</g>
+<rect x="132" y="533" width="556" height="40" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2"/><text x="410" y="561" font-size="24" font-weight="700" text-anchor="middle" fill="#92400e">1260 = 2 · 2 · 3 · 3 · 5 · 7</text>
+</svg>
