@@ -77,11 +77,15 @@ def main() -> None:
         md_files = sorted(subject_dir.glob("*.md"), key=lambda p: p.name.lower())
         if not md_files:
             continue
+        # Копируем всю папку предмета (включая img/ с иллюстрациями)
+        for src in subject_dir.rglob("*"):
+            if src.is_file():
+                rel = src.relative_to(ROOT)
+                target = SITE / "content" / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, target)
         for md in md_files:
             rel = md.relative_to(ROOT).as_posix()
-            target = SITE / "content" / rel
-            target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(md, target)
             manifest.append({
                 "subject": subject_dir.name,
                 "icon": SUBJECT_ICONS.get(subject_dir.name.lower(), "📘"),

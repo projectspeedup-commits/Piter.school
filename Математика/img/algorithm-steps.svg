@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 210" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Алгоритм разложения на простые множители: 3 шага -->
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="210" rx="18" fill="#f8faff"/>
+
+  <!-- стрелки между шагами -->
+  <g stroke="#4f46e5" stroke-width="3" fill="none" marker-end="url(#arr2)">
+    <line x1="272" y1="105" x2="296" y2="105"/>
+    <line x1="532" y1="105" x2="556" y2="105"/>
+  </g>
+
+  <!-- шаг 1 -->
+  <g>
+    <rect x="20" y="35" width="240" height="140" rx="16" fill="#ffffff" stroke="#4f46e5" stroke-width="2.5"/>
+    <circle cx="52" cy="67" r="18" fill="#4f46e5"/>
+    <text x="52" y="75" font-size="22" font-weight="700" text-anchor="middle" fill="#ffffff">1</text>
+    <text x="80" y="74" font-size="21" font-weight="700" fill="#1e293b">Начни с 2</text>
+    <text x="36" y="112" font-size="17" fill="#475569">Дели на самое маленькое</text>
+    <text x="36" y="136" font-size="17" fill="#475569">простое число. Не делится —</text>
+    <text x="36" y="160" font-size="17" fill="#475569">пробуй 3, потом 5, 7, 11…</text>
+  </g>
+
+  <!-- шаг 2 -->
+  <g>
+    <rect x="300" y="35" width="220" height="140" rx="16" fill="#ffffff" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="332" cy="67" r="18" fill="#16a34a"/>
+    <text x="332" y="75" font-size="22" font-weight="700" text-anchor="middle" fill="#ffffff">2</text>
+    <text x="360" y="74" font-size="21" font-weight="700" fill="#1e293b">Пиши столбик</text>
+    <text x="316" y="112" font-size="17" fill="#475569">Делитель — справа,</text>
+    <text x="316" y="136" font-size="17" fill="#475569">результат — снизу.</text>
+    <text x="316" y="160" font-size="17" fill="#475569">Дели снова и снова.</text>
+  </g>
+
+  <!-- шаг 3 -->
+  <g>
+    <rect x="560" y="35" width="240" height="140" rx="16" fill="#ffffff" stroke="#d97706" stroke-width="2.5"/>
+    <circle cx="592" cy="67" r="18" fill="#d97706"/>
+    <text x="592" y="75" font-size="22" font-weight="700" text-anchor="middle" fill="#ffffff">3</text>
+    <text x="620" y="74" font-size="21" font-weight="700" fill="#1e293b">Стоп на 1</text>
+    <text x="576" y="112" font-size="17" fill="#475569">Когда в частном получилась</text>
+    <text x="576" y="136" font-size="17" fill="#475569">1 — готово! Выпиши все</text>
+    <text x="576" y="160" font-size="17" fill="#475569">делители и перемножь их.</text>
+  </g>
+</svg>
