@@ -8,7 +8,7 @@
   var input = document.getElementById("search");
   var fullHtml = "";
 
-  fetch(base + "manifest.json")
+  fetch(base + "manifest.json", { cache: "no-cache" })
     .then(function (r) { return r.json(); })
     .then(function (items) { render(items); })
     .catch(function () {
